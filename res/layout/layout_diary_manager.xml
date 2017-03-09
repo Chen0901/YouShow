@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffa000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_back_selector" />
+
+        <EditText
+            android:id="@+id/diary_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/corners_bg"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="#bfbfbf" />
+
+        <Button
+            android:id="@+id/option_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_delete_selector" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <EditText
+            android:id="@+id/diary_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:lineSpacingExtra="4.6dp"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColorHint="#bfbfbf"
+            android:textSize="16sp" >
+        </EditText>
+    </ScrollView>
+
+</LinearLayout>

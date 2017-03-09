@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_pwdfind"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/userIdHint"
+        android:textColorHint="#ababab"
+        android:ems="11"
+        android:maxLength="11"
+        android:background="@drawable/longline"
+        android:textSize="18sp"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userId"
+        android:layout_alignRight="@+id/userId"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:textColorHint="#ababab"
+        android:maxLength="10"
+        android:background="@drawable/longline"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/checkCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userId"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/longline"
+        android:textColorHint="#ababab"
+        android:ems="7"
+        android:maxLength="4"
+        android:hint="@string/checkCodeHint"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/btn_setPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/checkCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_btn_bg"
+        android:text="@string/setPassword"
+        android:textColor="#fffde7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/goLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_setPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="#e65100"
+        android:text="@string/loginHint" />
+
+    <Button
+        android:id="@+id/getCheckCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkCode"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignTop="@+id/checkCode"
+        android:layout_toRightOf="@+id/checkCode"
+        android:background="@drawable/user_btn_bg"
+        android:text="@string/getCheckCode"
+        android:textColor="#fffde7"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_login"
+    android:background="@drawable/background"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/userIdHint"
+        android:textColorHint="#ababab"
+        android:ems="11"
+        android:maxLength="11"
+        android:background="@drawable/longline"
+        android:textSize="18sp"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userId"
+        android:layout_alignRight="@+id/userId"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:maxLength="10"
+        android:textColorHint="#ababab"
+        android:hint="@string/passwordHint"
+        android:background="@drawable/longline"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:background="@drawable/user_btn_bg"
+        android:textSize="18sp"
+        android:textColor="#fffde7"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/goRegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:textColor="#e65100"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/goFindPwdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:text="@string/findPassword"
+        android:textColor="#e65100"
+        android:textSize="16sp" />
+
+</RelativeLayout>

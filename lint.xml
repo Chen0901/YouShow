@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res/layout/diary_layout.xml" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="TypographyEllipsis" severity="ignore" />
+    <issue id="UselessParent">
+        <ignore path="res/layout/dialog_normal_layout.xml" />
+    </issue>
+</lint>

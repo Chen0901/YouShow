@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa000"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="15"
+            android:inputType="textMultiLine"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:hint="@string/searchText"
+            android:background="@drawable/corners_bg"
+            android:maxLines="1" >
+        </EditText>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_search_selector" />
+    </LinearLayout>
+
+    <com.example.youshow.view.LoadListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:cacheColorHint="#eeeeee"
+        android:dividerHeight="1dp" >
+    </com.example.youshow.view.LoadListView>
+
+</LinearLayout>
